@@ -1,0 +1,44 @@
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #e0e0e0 radial-gradient(circle, transparent 1%, #e0e0e0 1%)
+    center/15000%;
+}
+.ripple:active {
+  background-color: #f0f0f0;
+  background-size: 100%;
+  transition: background 0s;
+}
+.ripple-primary {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple-primary:hover {
+  background: #62df9a radial-gradient(circle, transparent 1%, #62df9a 1%)
+    center/15000%;
+}
+.ripple-primary:active {
+  background-color: #28d979;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.ripple-dark {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple-dark:hover {
+  background: #1e1e1e radial-gradient(circle, transparent 1%, #1e1e1e 1%)
+    center/15000%;
+}
+.ripple-dark:active {
+  background-color: #000000;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.shadowOnFocus:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}

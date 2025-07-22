@@ -1,0 +1,249 @@
+{
+  "name": "Karthik SR",
+  "age": 30,
+  "city": "Kerala",
+  "greeting": "Hello 👋🏻 I’m",
+  "role": "UX/UI Designer",
+
+  "languages": {
+    "title": "Languages",
+    "list": [
+      {
+        "id": 1,
+        "language": "English",
+        "progress": 100
+      },
+      {
+        "id": 2,
+        "language": "Malayalam",
+        "progress": 100
+      },
+      {
+        "id": 3,
+        "language": "Hindi",
+        "progress": 75
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "list": [
+      {
+        "id": 1,
+        "important": true,
+        "date": "Jun. 2023 - Present",
+        "role": "Marketing Manager",
+        "company": "Pankayam",
+        "info": "Full-time",
+        "points": [
+          {
+            "id": 1,
+            "title": "Strategy development and planning of campaigns that promote the business and generate genuine traffic"
+          },
+          {
+            "id": 2,
+            "title": "SEO Content Creation for Blogs, Website, Social media"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "important": false,
+        "date": "2017 - Present",
+        "role": "Graphic / Web designer",
+        "company": "Freelance",
+        "info": null,
+        "points": [
+          {
+            "id": 1,
+            "title": "Development of internal projects from scratch, product design of brands"
+          },
+          {
+            "id": 2,
+            "title": "Landing page, webapps and hybrid apps"
+          },
+          {
+            "id": 3,
+            "title": "Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "important": false,
+        "date": "Sep. 2021 - Jun. 2023",
+        "role": "Legal Assistant",
+        "company": "Law Firm",
+        "info": "Intern",
+        "points": [
+          {
+            "id": 1,
+            "title": "DProvide administrative support to lawyer and enhance office effectiveness"
+          },
+          {
+            "id": 2,
+            "title": "Handle communication with clients, witnesses etc."
+          },
+          {
+            "id": 3,
+            "title": "Repare case briefs and summarize depositions, interrogatories and testimony"
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "list": [
+      {
+        "id": 1,
+        "important": true,
+        "title": "UI/UX",
+        "shcool": "Coursera",
+        "hashtags": [
+          { "id": "hashtag_1", "title": "UX" },
+          { "id": "hashtag_2", "title": "UI" },
+          { "id": "hashtag_3", "title": "research" },
+          { "id": "hashtag_4", "title": "DesignSystem" },
+          { "id": "hashtag_5", "title": "wireframing" },
+          { "id": "hashtag_6", "title": "figma" }
+        ]
+      },
+      {
+        "id": 3,
+        "important": false,
+        "title": "Law",
+        "shcool": "University of Kerala",
+        "hashtags": [
+          { "id": "hashtag_7", "title": "law" },
+          { "id": "hashtag_8", "title": "legalStudies" },
+          { "id": "hashtag_9", "title": "contracts" },
+          { "id": "hashtag_10", "title": "internationalLaws" },
+          { "id": "hashtag_11", "title": "wireframing" },
+          { "id": "hashtag_12", "title": "figma" }
+        ]
+      },
+      {
+        "id": 3,
+        "important": false,
+        "title": "Graphic design",
+        "shcool": "Coursera",
+        "hashtags": [
+          { "id": "hashtag_13", "title": "branding" },
+          { "id": "hashtag_14", "title": "web" },
+          { "id": "hashtag_15", "title": "illustration" },
+          { "id": "hashtag_16", "title": "adobe" },
+          { "id": "hashtag_17", "title": "wireframing" },
+          { "id": "hashtag_18", "title": "figma" }
+        ]
+      }
+    ]
+  },
+  "tools": {
+    "title": "Tools",
+    "list": [
+      {
+        "id": "toolbox_1",
+        "tag": "design",
+        "list": [
+          {
+            "id": "tool_1",
+            "title": "Figma",
+            "icon": "/public/img/tools/logoFigma.svg"
+          },
+          {
+            "id": "tool_2",
+            "title": "Adobe Photoshop",
+            "icon": "/public/img/tools/logoAdobePhotoshop.svg"
+          },
+          {
+            "id": "tool_3",
+            "title": "Adobe Photoshop",
+            "icon": "/public/img/tools/logoAdobePhotoshop.svg"
+          },
+          {
+            "id": "tool_4",
+            "title": "Adobe Photoshop",
+            "icon": "/public/img/tools/logoAdobePhotoshop.svg"
+          },
+          {
+            "id": "tool_5",
+            "title": "Adobe Photoshop",
+            "icon": "/public/img/tools/logoAdobePhotoshop.svg"
+          },
+          {
+            "id": "tool_6",
+            "title": "Adobe Photoshop",
+            "icon": "/public/img/tools/logoAdobePhotoshop.svg"
+          }
+        ]
+      },
+      {
+        "id": "toolbox_2",
+        "tag": "no-code",
+        "list": [
+          {
+            "id": "tool_7",
+            "title": "Figma",
+            "icon": "/public/img/tools/logoFigma.svg"
+          },
+          {
+            "id": "tool_8",
+            "title": "Adobe Photoshop",
+            "icon": "/public/img/tools/logoAdobePhotoshop.svg"
+          },
+          {
+            "id": "tool_9",
+            "title": "Adobe Photoshop",
+            "icon": "/public/img/tools/logoAdobePhotoshop.svg"
+          },
+          {
+            "id": "tool_10",
+            "title": "Adobe Photoshop",
+            "icon": "/public/img/tools/logoAdobePhotoshop.svg"
+          }
+        ]
+      },
+      {
+        "id": "toolbox_3",
+        "tag": "artoficial intelligence",
+        "list": [
+          {
+            "id": "tool_11",
+            "title": "Figma",
+            "icon": "/public/img/tools/logoFigma.svg"
+          },
+          {
+            "id": "tool_12",
+            "title": "Adobe Photoshop",
+            "icon": "/public/img/tools/logoAdobePhotoshop.svg"
+          },
+          {
+            "id": "tool_13",
+            "title": "Adobe Photoshop",
+            "icon": "/public/img/tools/logoAdobePhotoshop.svg"
+          }
+        ]
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interests",
+    "list": [
+      { "id": "interest_1", "title": "branding" },
+      { "id": "interest_2", "title": "design" },
+      { "id": "interest_3", "title": "photography" },
+      { "id": "interest_4", "title": "artificial intelligence" },
+      { "id": "interest_5", "title": "illustration" },
+      { "id": "interest_6", "title": "social networks" },
+      { "id": "interest_7", "title": "research" },
+      { "id": "interest_8", "title": "dron pilot" },
+      { "id": "interest_9", "title": "games" }
+    ]
+  },
+  "contacts": {
+    "title": "Let´s chat! I´m ready to work on excinting projects",
+    "email": "srkarthik.designscape@gmail.com",
+    "phone": null
+  }
+}
