@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   background-color: #F5F5F5;
   font: 100% "Golos Text", sans-serif;
@@ -16,11 +17,14 @@ body {
   padding: 0;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
   min-width: 320px;
   min-height: 100vh;
   max-width: 100vw;
   font-size: 1.6em;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 *[contenteditable=true]:focus,
@@ -68,12 +72,45 @@ button:hover, button:focus, button:focus-visible,
 .button:focus,
 .button:focus-visible {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #0ACF83;
+}
+
+.btn_light {
+  background-color: #F0F0F0;
+  border: 1px solid #5C5C5C;
+  color: #3F3D3D;
+}
+.btn_light:hover, .btn_light:focus, .btn_light:focus-visible {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #e0e0e0;
+}
+
+progress {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  /* Отмена стандартного вида */
+}
+progress::-webkit-progress-bar {
+  background: #eee;
+  height: 2.2rem;
+}
+progress::-webkit-progress-value {
+  background: #28D979;
+  height: 2.2rem;
+  border-radius: 0.6rem;
+}
+progress::-moz-progress-bar {
+  background: #28D979;
+  height: 2.2rem;
+  border-radius: 0.6rem;
 }
 
 .container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1320px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -139,8 +176,7 @@ section {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -160,7 +196,13 @@ section {
   color: #ffffff;
 }
 
+.tag_bg_light {
+  background-color: #F0F0F0;
+  color: #5C5C5C;
+}
+
 .tag_bg_accent {
+  align-self: flex-start;
   background-color: rgba(126, 115, 18, 0.6);
   color: #DDF163;
 }
@@ -169,22 +211,12 @@ section {
   color: #149063;
 }
 
-.pane,
-.card {
+.pane {
+  border-radius: 2.4rem;
+  padding: 2.4rem;
   background-color: #F0F0F0;
-  border-radius: 12px;
-  padding: 12px;
-  box-sizing: border-box;
 }
-@media (min-width: 992px) {
-  .pane,
-  .card {
-    border-radius: 24px;
-    padding: 24px;
-  }
-}
-.pane h2,
-.card h2 {
+.pane h2 {
   margin: 0 0 2rem;
   font-size: 1.75em;
   font-weight: 500;
@@ -192,6 +224,8 @@ section {
 
 .card {
   background-color: #ffffff;
+  border-radius: 2rem;
+  padding: 1.6rem;
 }
 
 .card_bg_light {
@@ -211,9 +245,10 @@ section {
 .profileBox {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   gap: 20px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1100px) {
   .profileBox {
     gap: 40px;
   }
@@ -224,26 +259,38 @@ section {
   }
 }
 .profileBox .profileImg {
-  aspect-ratio: auto 1/1;
+  flex: 1 0 auto;
   min-width: 150px;
+  aspect-ratio: auto 1/1;
   background: #F0F0F0 no-repeat center/cover;
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .profileBox .profileImg {
     min-width: 200px;
   }
 }
+@media (max-width: 992px) {
+  .profileBox .profileImg {
+    flex: 0 0 auto;
+    max-height: 200px;
+  }
+}
 .profileBox .profileImg img {
   border-radius: 12px;
+}
+.profileBox .profileInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
 }
 .profileBox .nameBox {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 4rem;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+  gap: 0.5rem;
+  min-width: 50%;
+  min-height: 150px;
   flex: 1 1 auto;
 }
 .profileBox .nameBox .greeting {
@@ -252,10 +299,12 @@ section {
 }
 .profileBox .nameBox .name {
   font-size: 1.25em;
+  line-height: 1.2;
   font-weight: 600;
 }
 .profileBox .nameBox .roleName {
   font-size: 1.25em;
+  line-height: 1.2;
   font-weight: 500;
   color: #5C5C5C;
 }
@@ -288,7 +337,6 @@ section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: flex-start;
   gap: 2.4rem;
 }
 .experienceBox .jobList .card {
@@ -296,11 +344,13 @@ section {
   flex-flow: column nowrap;
   justify-content: flex-start;
   gap: 1.6rem;
+  padding-bottom: 4rem;
 }
 .experienceBox .jobList .card .topBar {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  width: 100%;
 }
 .experienceBox .jobList .card .content {
   display: grid;
@@ -358,8 +408,9 @@ section {
 .toolsBox .toolSection {
   width: 15rem;
   padding-top: 0;
+  border-radius: 1.2rem;
 }
-.toolsBox .toolSection .tag {
+.toolsBox .toolSection .tag_bg_dark {
   margin: 0 auto;
   white-space: nowrap;
   font-size: 0.625em;
@@ -374,17 +425,33 @@ section {
   align-items: flex-start;
   justify-content: space-between;
 }
-.toolsBox .toolsList li span {
+.toolsBox .toolsList li .tool-icon {
   display: inline-block;
   width: 4rem;
   aspect-ratio: 1/1;
   background: #ffffff no-repeat center/contain;
 }
+.toolsBox .toolsList li .tag_bg_light {
+  display: inline-block;
+  background-color: #F0F0F0;
+  color: #5C5C5C;
+}
+.toolsBox .toolSection_noIcons {
+  width: 18rem;
+}
+.toolsBox .toolSection_noIcons .toolsList {
+  justify-content: flex-start;
+}
 
 .educationBox .educationList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 2.4rem;
+}
+@media (max-width: 992px) {
+  .educationBox .educationList {
+    grid-template-columns: 1fr;
+  }
 }
 .educationBox .educationList .card {
   display: flex;
@@ -397,16 +464,25 @@ section {
   flex-flow: row nowrap;
   justify-content: space-between;
   font-size: 1.25em;
+  line-height: 1.2;
   font-weight: 500;
+  width: 100%;
 }
 .educationBox .educationList .card .likeIcon {
   background: url("/public/img/likeIcon.svg") no-repeat center/contain;
-  aspect-ratio: 1/1;
   width: 2rem;
+}
+.educationBox .educationList .card .likeIcon mark {
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 .educationBox .educationList .card .content .title {
   font-size: 1.25em;
   font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 .educationBox .educationList .hashtagList {
   display: flex;
@@ -418,6 +494,23 @@ section {
   color: #EBF9F2;
 }
 
+.extraBox .card + .interestsList {
+  margin-top: 2.4rem;
+}
+.extraBox .hardSkillList {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+.extraBox .hardSkillList li {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+.extraBox .hardSkillList li::before {
+  content: "—";
+  padding-left: 0.5rem;
+}
 .extraBox .interestsList {
   display: flex;
   flex-flow: row wrap;
@@ -428,10 +521,34 @@ section {
 .contactBox {
   max-height: -moz-fit-content;
   max-height: fit-content;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  padding: 2.4rem;
 }
 .contactBox .title {
   font-size: 28px;
+  line-height: 1.2;
   font-weight: 600;
+}
+.contactBox ul {
+  padding-left: 2rem;
+}
+.contactBox ul li {
+  list-style-type: disc;
+  color: #ffffff;
+}
+.contactBox p {
+  margin: 0;
+}
+.contactBox .phone {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.contactBox .phone span {
+  padding-top: 4px;
+  font-size: 1.6em;
 }
 .contactBox a {
   font-size: 1.25em;
@@ -440,10 +557,12 @@ section {
 }
 
 footer {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-flow: row wrap;
   gap: 20px;
+  justify-content: space-between;
+  align-items: center;
   border-top: 1px solid #F0F0F0;
   margin-top: 60px;
-  padding-top: 20px;
+  padding: 30px 0 60px;
 }/*# sourceMappingURL=style.css.map */

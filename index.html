@@ -1,5 +1,5 @@
 <!doctype html data-html2canvas-ignore="true">
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -22,7 +22,7 @@
     <main>
       <section class="profileBox">
         <div class="card card_bg_light profileImg shadowOnFocus"
-          style="background-image: url(/public/img/profileImg.png);">
+          style="background-image: url(./public/img/profileImg.png);">
           <!-- <img src="/public/img/profileImg.png" alt="profile image"> -->
         </div>
         <div class="card card_bg_light nameBox ripple shadowOnFocus">
@@ -40,22 +40,25 @@
           <li>
             <label for="progress_1" contenteditable="true">English</label>
             <div class="progress">
-              <!-- <progress id="progress_1" max="100" value="100"></progress> -->
-              <div id="progress_1" class="progressValue" style="width:100%"></div>
+              <!-- <progress id="progress_1" max="100" value="100" title="Hight"></progress> в pdf не отображается-->
+              <div id="progress_1" class="progressValue" title="Hight" style="width:100%"><data value="hight"></data>
+              </div>
             </div>
           </li>
           <li>
             <label for="progress_2" contenteditable="true">Malayalam</label>
             <div class="progress">
-              <!-- <progress id="progress_2" max="100" value="100"></progress> -->
-              <div id="progress_2" class="progressValue" style="width:100%"></div>
+              <!-- <progress id="progress_2" max="100" value="100" title="Hight"></progress> -->
+              <div id="progress_2" class="progressValue" title="Hight" style="width:100%"><data value="hight"></data>
+              </div>
             </div>
           </li>
           <li>
             <label for="progress_3" contenteditable="true">Hindi</label>
             <div class="progress">
-              <!-- <progress id="progress_3" max="100" value="75"></progress> -->
-              <div id="progress_3" class="progressValue" style="width:75%"></div>
+              <!-- <progress id="progress_3" max="100" value="75" title="Advanced"></progress> -->
+              <div id="progress_3" class="progressValue" title="Advanced" style="width:75%"><data
+                  value="advanced"></data></div>
             </div>
           </li>
         </ul>
@@ -64,10 +67,11 @@
       <section class="pane experienceBox shadowOnFocus">
         <h2 contenteditable="true">Experience</h2>
         <div class="jobList">
-          <div class="card card_bg_primary lastJob ripple-primary shadowOnFocus">
+          <article class="card card_bg_primary lastJob ripple-primary shadowOnFocus">
             <div class="topBar">
+
               <div class="date" contenteditable="true">Jun. 2023 - Present</div>
-              <div class="tag tag_bg_accent">most recent</div>
+              <mark class="tag tag_bg_accent">most recent</mark>
             </div>
             <div class="content">
               <div class="jobInfo">
@@ -84,8 +88,8 @@
                 <li contenteditable="true">SEO Content Creation for Blogs, Website, Social media</li>
               </ul>
             </div>
-          </div>
-          <div class="card job_2 ripple shadowOnFocus">
+          </article>
+          <article class="card job_2 ripple shadowOnFocus">
             <div class="topBar">
               <div class="date" contenteditable="true">2017 - Present</div>
             </div>
@@ -102,14 +106,16 @@
                 </li>
                 <li contenteditable="true">Landing page, webapps and hybrid apps</li>
                 <li contenteditable="true">Coordinating with outside agencies, art services, web designer, marketing,
-                  printers, and
-                  colleagues as necessary.</li>
+                  printers, and colleagues as necessary.</li>
               </ul>
             </div>
-          </div>
-          <div class="card job_3 ripple shadowOnFocus">
+          </article>
+          <article class="card job_3 ripple shadowOnFocus">
             <div class="topBar">
-              <div class="date" contenteditable="true">Sep. 2021 - Jun. 2023</div>
+
+              <div class="date" contenteditable="true">
+                <time datetime="2023-06">Sep. 2021 - Jun. 2023</time>
+              </div>
             </div>
             <div class="content">
               <div class="jobInfo">
@@ -127,41 +133,55 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </article>
         </div>
       </section>
-      <section class="pane toolsBox shadowOnFocus>
-        <h2 contenteditable=" true">Tools</h2>
+      <section class="pane toolsBox shadowOnFocus">
+        <h2 contenteditable="true">Tools</h2>
         <div class="toolSectionsList">
           <div class="card toolSection shadowOnFocus">
             <div class="tag tag_bg_dark" contenteditable="true">design</div>
             <ul class="toolsList">
-              <li><span style="background-image: url(/public/img/tools/logoFigma.svg);" title="Figma"></li>
-              <li><span style="background-image: url(/public/img/tools/logoAdobePhotoshop.svg);" alt="Adobe Photoshop">
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoFigma.svg);"
+                  title="Figma"></span></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoAdobePhotoshop.svg);"
+                  alt="Adobe Photoshop"></span>
               </li>
-              <li><span style="background-image: url(/public/img/tools/logoAdobIllustrator.svg);"
-                  alt="Adob Illustrator"></li>
-              <li><span style="background-image: url(/public/img/tools/logoAdobePremiere.svg);" title="Adobe Premiere">
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoAdobIllustrator.svg);"
+                  alt="Adob Illustrator"></span></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoAdobePremiere.svg);"
+                  title="Adobe Premiere"></span>
               </li>
-              <li><span style="background-image: url(/public/img/tools/logoNotion.svg);" title="Notion"></li>
-              <li><span style="background-image: url(/public/img/tools/logoMeet.svg);" title="Meet"></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoNotion.svg);"
+                  title="Notion"></span></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoMeet.svg);"
+                  title="Meet"></span></li>
             </ul>
           </div>
           <div class="card toolSection shadowOnFocus">
             <div class="tag tag_bg_dark" contenteditable="true">no-code</div>
             <ul class="toolsList">
-              <li><span style="background-image: url(/public/img/tools/logoZapier.svg);" title="Zapier"></li>
-              <li><span style="background-image: url(/public/img/tools/logoWebflow.svg);" title="Webflow"></li>
-              <li><span style="background-image: url(/public/img/tools/logoFramer.svg);" title="Framer"></li>
-              <li><span style="background-image: url(/public/img/tools/logoWordpress.svg);" title="Wordpress"></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoZapier.svg);"
+                  title="Zapier"></span></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoWebflow.svg);"
+                  title="Webflow"></span></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoFramer.svg);"
+                  title="Framer"></span></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoWordpress.svg);"
+                  title="Wordpress"></span>
+              </li>
             </ul>
           </div>
           <div class="card toolSection shadowOnFocus">
             <div class="tag tag_bg_dark" contenteditable="true">artoficial intelligence</div>
             <ul class="toolsList">
-              <li><span style="background-image: url(/public/img/tools/logoChatGPT.svg);" alt="ChatGPT"></li>
-              <li><span style="background-image: url(/public/img/tools/logoCopilot.svg);" alt="Copilot"></li>
-              <li><span style="background-image: url(/public/img/tools/logoMidjourney.svg);" alt="Midjourney"></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoChatGPT.svg);"
+                  alt="ChatGPT"></span></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoCopilot.svg);"
+                  alt="Copilot"></span></li>
+              <li><span class="tool-icon" style="background-image: url(./public/img/tools/logoMidjourney.svg);"
+                  alt="Midjourney"></span>
+              </li>
             </ul>
           </div>
         </div>
@@ -171,12 +191,17 @@
         <div class="educationList">
           <div class="card card_bg_primary lastEducation ripple-primary shadowOnFocus">
             <div class="topBar">
-              <div class="date" contenteditable="true">2023</div>
-              <div class="likeIcon"></div>
+
+              <div class="date" contenteditable="true">
+                <time datetime="2023">2023</time>
+              </div>
+              <div class="likeIcon" title="most relevant">
+                <mark>most relevant</mark>
+              </div>
             </div>
             <div class="content">
               <div class="title" contenteditable="true">UI/UX</div>
-              <ul class="hashtagList">
+              <ul class="skills">
                 <li>
                   <span class="hashtag" contenteditable="true">#UX</span>
                 </li>
@@ -202,11 +227,14 @@
 
           <div class="card education_2 ripple shadowOnFocus">
             <div class="topBar">
-              <div class="date" contenteditable="true">2017 - 2022</div>
+
+              <div class="date" contenteditable="true">
+                <time datetime="2022">2017 - 2022</time>
+              </div>
             </div>
             <div class="content">
               <div class="title" contenteditable="true">Law</div>
-              <ul class="hashtagList">
+              <ul class="skills">
                 <li>
                   <span class="hashtag" contenteditable="true">#law</span>
                 </li>
@@ -226,11 +254,14 @@
 
           <div class="card education_3 ripple shadowOnFocus">
             <div class="topBar">
-              <div class="date" contenteditable="true">2017</div>
+
+              <div class="date" contenteditable="true">
+                <time datetime="2017">2017</time>
+              </div>
             </div>
             <div class="content">
               <div class="title" contenteditable="true">Graphic design</div>
-              <ul class="hashtagList">
+              <ul class="skills">
                 <li>
                   <span class="hashtag" contenteditable="true">#branding</span>
                 </li>
@@ -267,16 +298,18 @@
 
       <section class="card card_bg_dark contactBox ripple-dark shadowOnFocus">
         <p class="title" contenteditable="true">Let´s chat! I´m ready to work on excinting projects</p>
-        <p><a href="mailto:srkarthik.designscape@gmail.com" contenteditable="true">srkarthik.designscape@gmail.com</a>
-        </p>
+        <address><a href="mailto:srkarthik.designscape@gmail.com"
+            contenteditable="true">srkarthik.designscape@gmail.com</a></address>
+
       </section>
     </main>
     <div class="testCanvas"></div>
     <footer class="footer no-print" data-html2canvas-ignore="true">
       <div class="btnBlock">
         <button id="html2pdfBtn">Download PDF</button>
-        <a class="button" href="./public/resume.pdf" download="resume_screnshot.pdf">Нормальный PDF</a>
+        <a class="button btn_light" href="./public/resume.pdf" download="resume_screnshot.pdf">Нормальный PDF</a>
       </div>
+      <a class="button" href="./cv.html" target="_blank">Смотреть мое резюме</a>
     </footer>
 
   </div>
